@@ -1,14 +1,15 @@
 #Task 1: Perform Basic Mathematical Operations
-a=input('a: ')
-b=input('b': ')
-p=int(b)
-n=int(a)
+a = float(input("Enter the first number: "))
+b = float(input("Enter the second number: "))
 addition = a + b
 subtraction = a - b
 multiplication = a * b
-division = a / b
-print("Basic Mathematical Operations: ")
-print("Addition: {a} + {b} = {addition}")
-print("Subtraction: {a} - {b} = {subtraction}")
-print("Multiplication: {a} * {b} = {multiplication}")
-print("Division: {a} / {b} = {division}")
+if b != 0:
+    division = a / b
+else:
+    division = "Undefined (cannot divide by zero)"
+print("\nResults:")
+print(f"Addition: {a} + {b} = {addition}")
+print(f"Subtraction: {a} - {b} = {subtraction}")
+print(f"Multiplication: {a} * {b} = {multiplication}")
+print(f"Division: {a} / {b} = {division}")
